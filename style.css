@@ -1,0 +1,27 @@
+.universal-button {
+    padding: 10px;
+    border-radius: 10px;
+    border-style: none;
+    color: aliceblue;
+    background-color: #1D4ED8;
+}
+
+.universal-button:hover {
+    cursor: pointer;
+    color: black;
+    background-color: cornflowerblue;
+}
+
+.nav-parent {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    color: #575757;
+    cursor: pointer;
+}
