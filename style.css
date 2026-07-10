@@ -10,13 +10,13 @@
     background-color: #1D4ED8;
 }
 
-/* Navigation */
-
 .universal-button:hover {
     cursor: pointer;
     color: black;
     background-color: cornflowerblue;
 }
+
+/* Navigation */
 
 .nav-parent {
     display: flex;
@@ -452,4 +452,25 @@
 .track-tag.break {
     background-color: #f0fdf4;
     color: #166534;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: #0D1B2A;
+    padding: 20px;
+}
+
+.footer-left .footer-right {
+    padding: 10px;
+}
+
+.footer-right {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
 }
