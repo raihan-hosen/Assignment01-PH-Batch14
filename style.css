@@ -161,3 +161,295 @@
     color: #64748b;
     margin: 0;
 }
+
+/* Container Layout */
+
+.pricing-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.pricing-header h2 {
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0 0 10px 0;
+    color: #0f172a;
+}
+
+.pricing-header p {
+    color: #64748b;
+    font-size: 16px;
+    margin: 0;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    align-items: stretch;
+}
+
+.pricing-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header {
+    border-bottom: 1px solid #f1f5f9;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+}
+
+.tier-name {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #64748b;
+}
+
+.price {
+    font-size: 48px;
+    font-weight: 800;
+    color: #0f172a;
+    margin: 8px 0 2px 0;
+}
+
+.per-unit {
+    font-size: 13px;
+    color: #94a3b8;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+    flex-grow: 1;
+}
+
+.features-list li {
+    font-size: 14px;
+    color: #475569;
+    margin-bottom: 16px;
+    position: relative;
+    padding-left: 18px;
+}
+
+.features-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #3b82f6;
+    font-weight: bold;
+}
+
+.btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid #2563eb;
+    color: #2563eb;
+}
+
+.btn:hover {
+    color: white;
+    background-color: #1D4ED8;
+}
+
+.btn-dark {
+    background: #ffffff;
+    border: 1px solid #0f172a;
+    color: #0f172a;
+}
+
+.pricing-card.featured {
+    background: #0b1528;
+    border-color: #0b1528;
+}
+
+.pricing-card.featured .tier-name {
+    color: #94a3b8;
+}
+
+.pricing-card.featured .price {
+    color: #ffffff;
+}
+
+.pricing-card.featured .per-unit {
+    color: #64748b;
+}
+
+.pricing-card.featured .features-list li {
+    color: #cbd5e1;
+}
+
+.pricing-card.featured .card-header {
+    border-bottom-color: #1e293b;
+}
+
+.btn-primary {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+/* Schedule Section */
+:root {
+    --devconf-blue: #2563eb;
+    --text-dark: #0f172a;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+}
+
+.schedule-section {
+    background-color: #ffffff;
+    padding: 30px 24px;
+    font-family: 'Inter', -apple-system, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.schedule-container {
+    max-width: 900px;
+    width: 100%;
+}
+
+.schedule-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.schedule-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    letter-spacing: -0.025em;
+    margin-bottom: 16px;
+}
+
+.schedule-subtitle {
+    font-size: 1.125rem;
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.schedule-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 16px;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.tab-btn:hover {
+    color: var(--text-dark);
+    background-color: #f8fafc;
+}
+
+.tab-btn.active {
+    color: #ffffff;
+    background-color: var(--devconf-blue);
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-item {
+    display: flex;
+    padding: 32px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.timeline-item:last-child {
+    border-bottom: none;
+}
+
+.time-col {
+    width: 140px;
+    flex-shrink: 0;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    padding-top: 2px;
+}
+
+.content-col {
+    flex-grow: 1;
+}
+
+.session-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin: 8px 0;
+}
+
+.session-desc {
+    color: var(--text-muted);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.track-tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+.track-tag.registration {
+    background-color: #f1f5f9;
+    color: #475569;
+}
+
+.track-tag.keynote {
+    background-color: #eff6ff;
+    color: #1e40af;
+}
+
+.track-tag.technical {
+    background-color: #faf5ff;
+    color: #6b21a8;
+}
+
+.track-tag.break {
+    background-color: #f0fdf4;
+    color: #166534;
+}
